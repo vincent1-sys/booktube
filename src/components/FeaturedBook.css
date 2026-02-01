@@ -1,0 +1,16 @@
+.featured-book {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.book-cover {
+  width: 250px;
+  height: 350px;
+  background-color: #ffcccc; /* couleur pour simuler la couverture */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 15px auto;
+  border-radius: 10px;
+}

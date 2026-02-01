@@ -1,0 +1,174 @@
+.App {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+.page {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.book-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.book-card .author {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.subscribe-btn {
+  background: #e62117;
+  color: #fff;
+  border: none;
+  padding: 3px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.actions button {
+  background: #eee;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.actions button:hover {
+  background: #ddd;
+}
+
+.book-card.small { width: 150px; }
+
+.subscription-list {
+  list-style: none;
+  padding: 0;
+}
+
+.subscription-list li {
+  background: #fff;
+  padding: 8px 10px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+}
+
+.account-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.account-btn {
+  background: #e62117;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Brouillons */
+.book-card.draft {
+  opacity: 0.7;
+  border: 2px dashed #ccc;
+}
+
+/* Scroll pour UploadModal */
+.upload-content {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .book-grid {
+    justify-content: center;
+  }
+  .book-card {
+    width: 90%;
+  }
+  .upload-row {
+    flex-direction: column;
+  }
+  .cover-section img {
+    width: 100%;
+    height: auto;
+  }
+}
+.comments-section {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.comments-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.comment-text {
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.comment-text strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
